@@ -6,6 +6,54 @@ select.onchange = function() {
   const choice = select.value;
 
   // ADD CONDITIONAL HERE
+  if (choice === 'January'){
+    let days = 31;
+    choice = 'January';
+    else if (choice === 'Febuary'){
+        let days = 28;
+        choice = 'Febuary';
+    }
+    else if (choice === 'March'){
+        let days = 31;
+        choice = 'March';
+    }
+    else if (choice === 'April'){
+        let days = 30;
+        choice = 'April';
+    }
+    else if (choice === 'May'){
+        let days = 31;
+        choice = 'May';
+    }
+    else if (choice === 'June'){
+        let days = 30;
+        choice = 'June';
+    }
+    else if (choice === 'July'){
+        let days = 31;
+        choice = 'July';
+    }
+    else if (choice === 'August'){
+        let days = 31;
+        choice = 'August';
+    }
+    else if (choice === 'September'){
+        let days = 30;
+        choice = 'September';
+    }
+    else if (choice === 'October'){
+        let days = 31;
+        choice = 'October';
+    }
+    else if (choice === 'November'){
+        let days = 30;
+        choice = 'November';
+    }
+    else if (choice === 'December'){
+        let days = 31;
+        choice = 'December;
+    }
+  }
 
   createCalendar(days, choice);
 }
