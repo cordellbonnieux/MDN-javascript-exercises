@@ -26,7 +26,15 @@
     <textarea class="playable playable-js" style="height: 220px;">
 let quote = 'I dO nOT lIke gREen eGgS anD HAM';
 
-// Add your code here
+// 1. Change the casing to correct sentence case (all lowercase, except for upper case first letter). Store the new quote in a variable called fixedQuote.
+fixedQuote = quote.toLowerCase();
+fixedQuote = fixedQuote.charAt(0).toUpperCase() + fixedQuote.slice(1);
+// 2. In fixedQuote, replace "green eggs and ham" with another food that you really don't like.
+fixedQuote = fixedQuote.replace("green eggs and ham","meat and milk");
+// 3. There is one more small fix to do — add a full stop onto the end of the quote, and save the final version in a variable called finalQuote.
+let finalQuote = fixedQuote + ".";
+
+
 
 // Don't edit the code below here!
 
