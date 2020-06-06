@@ -33,6 +33,9 @@
       }
       return num;
     }
+    function circumference(num){
+      return 3.14 * num;
+    }
     input.onchange = function() {
       const num = input.value;
      if (isNaN(num)) {
@@ -41,7 +44,8 @@
       else {
           para.textContent = num + ' squared is ' + squared(num) + '. ' +
           num + ' cubed is ' + cubed(num) + '. ' +
-          num + ' factorial is ' + fractorial(num) + '.';
+          num + ' factorial is ' + fractorial(num) + 
+          ' the circumference is ' + circumference(num) + '.';
         }
     }
   </script>
