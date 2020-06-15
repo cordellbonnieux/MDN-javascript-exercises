@@ -10,3 +10,14 @@ refused.textContent = 'Refuse: '
 // refused.textContent += ;
 // admitted.textContent += ;
 
+
+for (let i = 0; i < people.length; i++){
+    if (people[4] || people[5]){
+        refused.textContent += people[4] + ", " + people[5];
+        return refused;
+    }
+    else (people){
+        admitted.textContent += people;
+        return admitted;
+    }
+}
